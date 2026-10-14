@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07030a">
+<title>For my Angel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<canvas id="fg"></canvas>
+<div id="pulse"></div>
+<div id="vig"></div>
+<div id="grain"></div>
+<div id="lyric"></div>
+<div id="end"><p></p></div>
+
+<div id="intro">
+  <h1>For my Angel</h1>
+  <p>sound on, lights low</p>
+  <button id="go">Come closer ♡</button>
+</div>
+
+<div id="bar"><i></i></div>
+<button id="again" hidden aria-label="Watch again">↺</button>
+
+<div id="sync" hidden>
+  <div class="p1">
+    <b>Sync mode</b>
+    <p>Paste the lyrics, one line per row.</p>
+    <textarea id="sl" rows="8"></textarea>
+    <button id="ss">Start song</button>
+  </div>
+  <div class="p2" hidden>
+    <p id="nx"></p>
+    <small><b>Space</b> stamp next line · <b>H</b> a heart starts · <b>J</b> that heart ends · <b>Enter</b> export</small>
+    <textarea id="out" rows="8" hidden readonly></textarea>
+  </div>
+</div>
+
+<audio id="a" src="assets/angel.mp3" preload="auto"></audio>
+<script src="lyrics.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
